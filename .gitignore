@@ -1,0 +1,18 @@
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Personal / biometric data - never commit
+data/gallery.npz
+data/eval/
+enroll/
+Attendance/*.csv
+
+# Keep the folders themselves tracked
+!data/.gitkeep
+!Attendance/.gitkeep
+
+# Ultralytics may create these when you experiment
+runs/

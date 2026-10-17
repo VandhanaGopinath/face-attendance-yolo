@@ -1,0 +1,7 @@
+ultralytics>=8.3        # YOLOv8 face detector (pulls in PyTorch)
+onnxruntime>=1.17       # runs the ArcFace recognition model
+opencv-python>=4.8,<5   # video capture, drawing, face alignment (4.x; 5.x removed the Haar class used by compare_detectors.py)
+numpy>=1.24
+
+# Windows-only, optional (spoken "attendance taken" feedback). Falls back to printing.
+pywin32>=306; sys_platform == "win32"
